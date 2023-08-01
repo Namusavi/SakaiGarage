@@ -19,4 +19,37 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('insert', views.insertData, name='insert'),
+    path('delete/<id>', views.deleteData, name='delete'),
+    path('update/<id>', views.updateData, name='update')
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

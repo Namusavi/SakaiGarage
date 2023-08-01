@@ -6,7 +6,7 @@
     <title>Sakai AutoParts</title>
 
     <div>
-        <link rel="stylesheet" href="https://images.pexels.com/photos/17370569/pexels-photo-17370569/free-photo-of-a-car-in-a-parking-lot.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <link rel="stylesheet" href="">
 
     </div>
 
@@ -14,11 +14,18 @@
 </head>
 <body>
 
+ <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">.bg-primary-subtle</div>
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
  <div class="container-md">
 
  </div>
  </nav>
+
+
+
+
+
 
  <div class="container mt-4">
 
@@ -49,26 +56,10 @@
  <input type="text" value="{{ dta.make }}" class="form-control" placeholder="Enter Vehicle make" name="make" required>
  </div>
 
- <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="make" aria-expanded="false">
-    Vehicle make
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Toyota</a></li>
-    <li><a class="dropdown-item" href="#">Isuzu</a></li>
-    <li><a class="dropdown-item" href="#">Mercedes</a></li>
-    <li><a class="dropdown-item" href="#">BMW</a></li>
-    <li><a class="dropdown-item" href="#">Porshe</a></li>
-    <li><a class="dropdown-item" href="#">Audi</a></li>
-    <li><a class="dropdown-item" href="#">Volkswagen</a></li>
-    <li><a class="dropdown-item" href="#">Honda</a></li>
-    <li><a class="dropdown-item" href="#">Hyundai</a></li>
-    <li><a class="dropdown-item" href="#">Subaru</a></li>
-    <li><a class="dropdown-item" href="#">Suzuki</a></li>
+ <div class="form-group">
+ <input type="text" value="{{ dta.model }}" class="form-control mt-2" placeholder="Enter vehicle make" name="make" required>
 
-  </ul>
-</div>
-
+ </div>
 
 <div class="form-group">
  <input type="text" value="{{ dta.chasis }}" class="form-control mt-2" placeholder="Enter vehicle chasis number" name="chasis" required>
